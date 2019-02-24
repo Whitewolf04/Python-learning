@@ -11,13 +11,13 @@ def fact(num):
 def generator():
     triangle_list = []
     item = 0
-    for num in range(1, 1000000):
+    for num in range(1, 2000000):
         item += num
         triangle_list.append(item)
     return triangle_list
 
 for so in generator():
-    if len(fact(so)) > 200:
+    if len(fact(so)) > 500:
         print(so)
         break
     else:
